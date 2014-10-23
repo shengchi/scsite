@@ -1,12 +1,40 @@
 ---
-layout: default
 title: 我的Blog
 ---
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-  {% for post in site.posts %}
-　   <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　 　{% endfor %}
-</ul>
 
+<!DOCTYPE html>
+<html>
+　　<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<style>
+	body {background-image : url(https://raw.githubusercontent.com/shengchi/scsite/gh-pages/_asset/background-pic.jpg);}
+	div#top {width:1000px; height:80px; background-color:#000000; float:left; }
+	div#floor1 {width:1000px; height:400px; background-color:#000500; float:left; }
+	div#floor2 {width:1000px; height:400px; background-color:#001000; float:left; margin-top:20px; }
+	div#floor3 {width:1000px; height:400px; background-color:#001500; float:left; margin-top:20px; }
+	div#floor4 {width:1000px; height:400px; background-color:#002000; float:left; margin-top:20px; }
+	div#footer {width:1000px; height:150px; background-color:#002500; float:left; margin-top:20px; }
+	</style>
+	<title>{{ page.title }}</title>
+　　</head>
+　　<body>
+	<div id=“top”>
+		<p>This is TOP</p>
+	</div>
+	<div id=“floor1”>
+		<p>This is FLOOR1</p>
+	</div>
+	<div id=“floor2”>
+		<p>This is FLOOR2</p>
+	</div>
+	<div id=“floor3”>
+		<p>This is FLOOR3</p>
+	</div>
+	<div id=“floor4”>
+		<p>This is FLOOR4</p>
+	</div>
+	<div id=“footer”>
+		<p>This is FOOTER</p>
+	</div>
+　　</body>
+</html>
