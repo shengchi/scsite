@@ -8,9 +8,17 @@
 		background-image : url(https://raw.githubusercontent.com/shengchi/scsite/gh-pages/_asset/background-pic.jpg);
 		background-attachment:fixed;
 		}
-        div#top 
-		{
-		width:1000px; 
+        nav 
+		{ 
+		height:45px; 
+		background-color:#585858;
+		margin-top=0;
+		padding-left:50px;
+		float:left;
+		}
+	header
+		{ 
+		width:1000px;
 		height:45px; 
 		background-color:#585858;
 		margin-top=0;
@@ -30,11 +38,12 @@
 	div#floor2 
 		{
 		width:1000px; 
-		height:400px; 
+		height:500px; 
 		background-color:#FFFFFF;
 		margin-top:0px;
 		margin-left:auto;
 		margin-right:auto; 
+		padding-top:20px;
 		box-shadow:0px 20px 15px #888888 inset;
 		}
 	div#floor3 
@@ -64,11 +73,6 @@
 		margin-left:auto;
 		margin-right:auto; 
 		}
-	li
-		{
-		float:left;
-		padding:5px;
-		}
 	a:link
 		{
 		display:block;
@@ -77,15 +81,17 @@
 		color:#ffffff;
 		text-decoration:none;
 		font-size:22px;
+		float:left;
 		}
 	a:visited
 		{
 		display:block;
 		width:100px;
 		height:25px;
-		color:#ffffff;
+		color:#000000;
 		text-decoration:none;
 		font-size:22px;
+		float:left;
 		}
 	a:hover
 		{
@@ -96,35 +102,37 @@
 		color:#00ff00;
 		text-decoration:none;
 		font-size:22px;
+		float:left;
 		}
 	</style>
 　　</head>
 　　<body>
-	<div id="top" >
-	<table >
-	<tr >
-		<td style="width:100px; height:40px; " >
-			<p style="margin:0; font-style:italic; font-size:24px;" align="center" >LOGO</p>
-		</td>
-		<td style="height:40px;" >
-			<ul style="list-style-type:none; margin-top:-8px; padding:0;" >
-				<li ><a href="http://www.baidu.com" align="center" target="_blank" style="padding:10px;" >Baidu</a></li>
-				<li ><a href="http://www.sina.com" align="center" target="_blank" style="padding:10px;" > Sina</a></li>
-				<li ><a href="http://www.sohu.com" align="center" target="_blank" style="padding:10px; ">Sohu</a></li>
-				<li ><a href="http://www.163.com" align="center" target="_blank" style="padding:10px; ">163</a></li>
-			</ul>
-		</td>
-	</tr>
-	</table>
-	</div>
+	<header>
+		<div style="width:100px; height:45px; float:left; background-color:#ffffff;" >
+			<p style="margin:0; font-style:italic; font-size:24px; padding-top:10px;" align="center" >LOGO</p>
+		</div>
+                <nav>
+			<a href="http://www.baidu.com" align="center" target="_blank" style="padding:10px;" >Baidu</a>
+			<a href="http://www.sina.com" align="center" target="_blank" style="padding:10px;" > Sina</a>
+			<a href="http://www.sohu.com" align="center" target="_blank" style="padding:10px;" >Sohu</a>
+			<a href="http://www.163.com" align="center" target="_blank" style="padding:10px;" >163</a>
+		</nav>
+	</header>
         <div id="floor1">
                 <a href="http://www.baidu.com" >
 			<img src="https://raw.githubusercontent.com/shengchi/scsite/gh-pages/_asset/bayern-home.jpg" alt="拜仁慕尼黑" width="1000px" >
 		</a>
         </div>
         <div id="floor2">
-                This is FLOOR2
-        </div>
+		<div style="width:400px; float:left;">
+			<h2 style="text-align:center;">FC Bayern München</h2>
+			<p style="width:300px; text-align:left; text-indent:2em; margin-left:50px;">德甲第9轮开始榜首大战，拜仁客场0比0战平门兴。瓜帅在比赛结束时要求延长伤停补时，他对第四官员、女裁判比比安娜抱怨。他在赛后说：“扎卡倒在场地上，应该延长时间。但她对我说：不，我们不会。”瓜帅的手甚至放在比比安娜肩上，按足协规定，碰触第四裁判是不允许的，不过据报道，裁判的赛后报告没有提这件事。顺便说一句，比比安娜可是名警官。</p>
+		</div>
+		<div style="margin-left:200px;">
+<p><embed src="http://player.56.com/v_MTI4Njc4MzQw.swf/1030_justin0842.swf" type="application/x-shockwave-flash" width="480" height="400" allowfullscreen="true" allownetworking="all" allowscriptaccess="always"></embed></p>
+
+	
+        	</div>
         <div id="floor3">
                 This is FLOOR3
         </div>
