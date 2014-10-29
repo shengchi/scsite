@@ -141,8 +141,32 @@
 			</p>	
         	</div>
 	</div>
-        <div id="floor3">
-                This is FLOOR3
+        <div id="floor3" >
+		<img id="imgInFloor3" src="http://www.sinaimg.cn/dy/slidenews/1_img/2014_44/2841_506336_705260.jpg" style="height:200px;">
+		<script>
+		window.onload=function()
+		{
+		changePic();
+		}
+		var n = 0;
+		var jsonOb = new Array(
+				"http://www.sinaimg.cn/dy/slidenews/1_img/2014_44/2841_506332_827349.jpg",
+				"http://www.sinaimg.cn/dy/slidenews/1_img/2014_44/2841_506333_386372.jpg",
+				"http://www.sinaimg.cn/dy/slidenews/1_img/2014_44/2841_506334_943039.jpg",
+				"http://www.sinaimg.cn/dy/slidenews/1_img/2014_44/2841_506335_210703.jpg",
+				"http://www.sinaimg.cn/dy/slidenews/1_img/2014_44/2841_506336_705260.jpg"
+			);
+		function changePic()
+		{
+		document.getElementById("imgInFloor3").src=jsonOb[n];
+		n++;
+		if (n == 5)
+			{
+			n = 0;
+			}
+		t=setTimeout ("changePic()",2000);
+		}
+		</script>
         </div>
         <div id="floor4">
                 This is FLOOR4
