@@ -1,3 +1,9 @@
+---
+title: index
+---
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 　　<head>
@@ -169,7 +175,9 @@
 		</script>
         </div>
         <div id="floor4">
+		{%for posts in site.posts%}
                 <a href="{{site.url}}{{post.url}}" >{{post.title}}</a>
+		{%end for%}
         </div>
         <div id="footer">
                 This is “FOOTER”""""
